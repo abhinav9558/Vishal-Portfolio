@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chimdi Chimereze | Portfolio</title>
+
+    <!-- Meta tags for SEO -->
+    <meta name="description"
+        content="Portfolio of Chimdi Chimereze, showcasing a day in the life narrative and projects.">
+
+    <!-- Fonts: Digital 7 (simulated using standard web fonts or Google Fonts), Space Mono, Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=VT323&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Noise Texture Overlay -->
+    <div class="noise-overlay" id="noise-overlay"></div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-logo">Signature</div>
+    </div>
+
+    <!-- Fixed UI Elements -->
+    <nav class="left-sidebar">
+        <div class="logo">
+            <!-- SVG Signature Placeholder -->
+            <svg viewBox="0 0 100 50" width="80" height="40" stroke="white" stroke-width="2" fill="none">
+                <path d="M10,30 Q20,10 30,30 T50,30 T70,30" />
+            </svg>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#intro" class="nav-link active"><span class="nav-dot"></span>INTRO</a></li>
+            <li><a href="#work" class="nav-link"><span class="nav-dot"></span>WORK</a></li>
+            <li><a href="#projects" class="nav-link"><span class="nav-dot"></span>PROJECTS</a></li>
+            <li><a href="#fun" class="nav-link"><span class="nav-dot"></span>FUN</a></li>
+            <li><a href="#writings" class="nav-link"><span class="nav-dot"></span>WRITINGS</a></li>
+        </ul>
+        <div class="social-links">
+            <a href="#">TW</a>
+            <a href="#">IN</a>
+            <a href="#">GH</a>
+            <p>&copy; 2026</p>
+        </div>
+    </nav>
+
+    <aside class="right-timeline" id="right-timeline">
+        <div class="timeline-line"></div>
+        <div class="time-marker time-marker-active" id="time-5am">5:00 AM</div>
+        <div class="time-marker" id="time-9am">9:00 AM</div>
+        <div class="time-marker" id="time-1pm">1:00 PM</div>
+        <div class="time-marker" id="time-6pm">6:00 PM</div>
+        <div class="time-marker" id="time-10pm">10:00 PM</div>
+    </aside>
+
+    <div class="hire-me-btn-container">
+        <button class="hire-me-btn">HIRE ME</button>
+    </div>
+
+    <!-- Scrolling Content -->
+    <main class="content">
+        <!-- Background Image Layers (Fixed/Parallax Behind Content) -->
+        <div class="bg-layer" id="bg-layer-1"></div>
+        <div class="bg-layer" id="bg-layer-2" style="opacity: 0;"></div>
+        <div class="bg-layer" id="bg-layer-3" style="opacity: 0;"></div>
+
+        <!-- Section 1: Intro / Hero -->
+        <section id="intro" class="section-block" style="position: relative;">
+            <!-- React Bits Background Mount Point -->
+            <div id="react-bits-root"
+                style="position: absolute; top:0; left:0; width:100%; height:100%; z-index:-1; pointer-events:none; border-radius: 20px; overflow: hidden;">
+            </div>
+
+            <div class="hero-container" style="position: relative; z-index: 1;">
+                <h1 class="hero-text text-glitch" data-text="CHIMDI CHIMEREZE">CHIMDI CHIMEREZE</h1>
+                <div class="hero-parchment">
+                    <p>I am a multidisciplinary designer and developer focused on crafting highly interactive and
+                        narrative-driven digital experiences.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Work -->
+        <section id="work" class="section-block">
+            <h2 class="section-title text-glitch" data-text="WORK">WORK</h2>
+            <div class="marquee-container">
+                <div class="marquee-track">
+                    <span>WORK WORK WORK WORK WORK WORK WORK</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-mockup">
+                    <div class="mockup-content">Project Visualization</div>
+                </div>
+                <div class="project-note sticky-note color-mint">
+                    <h3>Company X</h3>
+                    <p>Lead Designer. Redesigned the core user journey resulting in 2x conversion.</p>
+                </div>
+                <div class="rotating-sticker">UX/UI</div>
+            </div>
+        </section>
+
+        <!-- Section 3: Projects -->
+        <section id="projects" class="section-block">
+            <h2 class="section-title text-glitch" data-text="PROJECTS">PROJECTS</h2>
+            <div class="project-card alternate-layout">
+                <div class="project-mockup">
+                    <div class="mockup-content">App Interface</div>
+                </div>
+                <div class="project-note sticky-note color-purple">
+                    <h3>Side Hustle Y</h3>
+                    <p>A personal tool for managing creative workflows.</p>
+                </div>
+                <div class="rotating-sticker">DEV</div>
+            </div>
+        </section>
+
+        <!-- Section 4: Fun -->
+        <section id="fun" class="section-block">
+            <h2 class="section-title text-glitch" data-text="FUN">FUN</h2>
+            <div class="wireframe-art">
+                <!-- Abstract wireframe illustration -->
+                <svg viewBox="0 0 200 200" width="200" height="200" stroke="white" stroke-width="1" fill="none">
+                    <circle cx="100" cy="100" r="80" stroke-dasharray="5,5" />
+                    <rect x="50" y="50" width="100" height="100" />
+                </svg>
+            </div>
+
+            <div class="ios-dock">
+                <div class="dock-icon">♫</div>
+                <div class="dock-icon">📷</div>
+                <div class="dock-icon">🎮</div>
+                <div class="dock-icon">📚</div>
+            </div>
+
+            <button class="archive-btn">Archive</button>
+        </section>
+
+        <!-- Section 5: Writings -->
+        <section id="writings" class="section-block">
+            <h2 class="section-title text-glitch" data-text="WRITINGS">WRITINGS</h2>
+            <div class="post-list">
+                <div class="post-item">
+                    <span class="post-date">OCT 24</span>
+                    <h3 class="post-title">Designing with Noise and Texture</h3>
+                </div>
+                <div class="post-item">
+                    <span class="post-date">SEP 12</span>
+                    <h3 class="post-title">The Value of Over-Engineering Portfolios</h3>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Scripts -->
+    <!-- React & Framer Motion support for React Bits component integration -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Note: framer-motion is available via global window.Motion if needed -->
+    <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
+    <!-- OGL Library for React Bits Prism Background -->
+    <script src="https://unpkg.com/ogl@1.0.11/umd/ogl.js"></script>
+
+    <!-- GSAP for core animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- ScrollTrigger for scroll-based animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="script.js"></script>
+
+    <!-- React Component Loading -->
+    <script type="text/babel" src="reactBitsBackground.jsx"></script>
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Space_Mono, VT323 } from "next/font/google";
+import { Space_Mono, Playfair_Display } from "next/font/google";
 import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
 
@@ -9,15 +9,15 @@ const spaceMono = Space_Mono({
   subsets: ["latin"],
 });
 
-const vt323 = VT323({
-  variable: "--font-heading",
-  weight: ["400"],
+const playfair = Playfair_Display({
+  variable: "--font-serif",
   subsets: ["latin"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
-  title: "Chimdi Chimereze | Portfolio",
-  description: "Multidisciplinary designer and developer portfolio.",
+  title: "Vishal Anivilla | Director's Cut",
+  description: "Cinematic portfolio of a multidisciplinary film and digital content production professional.",
 };
 
 export default function RootLayout({
@@ -26,9 +26,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body
-        className={`${spaceMono.variable} ${vt323.variable} antialiased selection:bg-white/20`}
+        className={`${spaceMono.variable} ${playfair.variable} antialiased bg-black text-[#e0e0e0] selection:bg-[#FF2A00] selection:text-white`}
       >
         <SmoothScroll>{children}</SmoothScroll>
       </body>
